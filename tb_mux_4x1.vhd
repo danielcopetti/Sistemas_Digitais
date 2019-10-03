@@ -16,32 +16,32 @@ architecture atv of TB_MUX_4x1 is
 
   process
     begin
-    TB_M0 <= "01";
-
-    TB_entNula <= "0000000000100101";
-    TB_entA 	<= "0000000001000010";
-   	TB_entB 	<= "0000000001000011";
-    TB_entC 	<= "0000000001000100";
-    wait for 10 ns;
+    	TB_M0 <= "01";
+	  
+    	TB_entNula <= "0000000000100101";
+    	TB_entA 	<= "0000000001000010";
+  	TB_entB 	<= "0000000001000011";
+    	TB_entC 	<= "0000000001000100";
+    	wait for 10 ns;
     
 
 	TB_M0 <= "11";
     
-    TB_entNula <= "0000000000000001";
-    TB_entA 	<= "0000000000000010";
+    	TB_entNula <= "0000000000000001";
+    	TB_entA 	<= "0000000000000010";
    	TB_entB	<= "0000000000000011";
-    TB_entC 	<= "0000000000000100";
-    wait for 10 ns;
+    	TB_entC 	<= "0000000000000100";
+    	wait for 10 ns;
     
 
 	TB_M0 <= "10";
 
-    TB_entNula <= "0000000000000101";
-    TB_entA 	<= "0000000000000010";
+    	TB_entNula <= "0000000000000101";
+    	TB_entA 	<= "0000000000000010";
    	TB_entB 	<= "0000000000000011";
-    TB_entC 	<= "0000000000000100";
-    wait for 10 ns;
+    	TB_entC 	<= "0000000000000100";
+    	wait for 10 ns;
   
-    wait;
+    	wait;
   end process;
 end architecture;
