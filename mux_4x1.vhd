@@ -18,12 +18,12 @@ architecture multiplexador of mux4x1 is
                 if (M0 = "00") then
               		state <= entNula;
           	elsif (M0 = "01") then
-          			state <= entA;
+          		state <= entA;
       		elsif (M0 = "10") then
-      				state <= entB;
+      			state <= entB;
                 elsif (M0 = "11") then
                 	state <= entC;
-				end if;
+			end if;
 		end process;
         
 		saida <= state;
