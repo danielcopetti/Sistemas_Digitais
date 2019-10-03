@@ -17,9 +17,9 @@ architecture multiplexador of mux4x1 is
 			begin
                 if (M0 = "00") then
               		state <= entNula;
-          		elsif (M0 = "01") then
+          	elsif (M0 = "01") then
           			state <= entA;
-      			elsif (M0 = "10") then
+      		elsif (M0 = "10") then
       				state <= entB;
                 elsif (M0 = "11") then
                 	state <= entC;
